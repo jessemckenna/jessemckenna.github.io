@@ -1,0 +1,66 @@
+* {
+	font-family: Georgia;
+	font-weight: normal;
+	color: #111111;
+}
+
+body, h1, h2, h3, h4 {
+	display: block;
+	line-height: 1;
+}
+
+body {
+	background-color: #CFDBE1;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+h2, h3, h4 {
+	font-size: 1.1rem;
+}
+
+h2 {
+	text-align: center;
+	color: #D12C04;
+}
+
+h3 {
+}
+
+h4 {
+	font-weight: normal;
+	font-style: italic;
+}
+
+p {
+	text-align: center;
+}
+
+li {
+	font-size: 1rem;
+	list-style-type: asterisks;
+}
+
+a:link, a:visited {
+	color: #024E0A;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #06205B;
+}
+
+section {
+	background-color: #F3F3F1;
+}
+
+.box {
+	margin: 0 auto 16px auto;
+	padding: 1rem 2rem;
+	max-width: 1000px;
+}

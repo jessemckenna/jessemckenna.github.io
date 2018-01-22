@@ -73,12 +73,15 @@ img {
 	margin-right: 24px;
 	display: flex;
 }
+
 section {
 	background-color: #F3F3F1;
 	display: block;
 }
 
 .box {
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 2rem;
 	padding: 1rem 2rem;
 	max-width: 1000px;

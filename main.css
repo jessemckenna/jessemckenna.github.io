@@ -1,13 +1,10 @@
 * {
 	font-family: 'Lora', serif;
-	font-weight: normal;
 	color: #111111;
 }
 
 body {
 	background-color: #CFDBE1;
-	margin: 0;
-	padding: 0;
 }
 
 header {
@@ -15,9 +12,10 @@ header {
 	padding: 2rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
+	font-size: 1.1rem;
 }
 
 h1 {
@@ -26,52 +24,9 @@ h1 {
 	font-size: 1.5rem;
 }
 
-h2, h3 {
-	font-size: 1.1rem;
-}
-
 h2 {
 	text-align: center;
 	color: #D12C04;
-}
-
-h1+p {
-	text-align: center;
-	margin: 1rem;
-}
-
-p {
-	margin: 0px;
-	display: block;
-}
-
-.date {
-	color: grey;
-	font-size: 0.8rem;
-	font-family: 'Raleway', sans-serif;
-	margin-bottom: 0.2rem;
-	display: block;
-}
-
-.title {
-	font-family: 'Raleway', sans-serif;
-	margin-bottom: 0.2rem;
-}
-
-a:link, a:visited {
-	color: #024E0A;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #06205B;
-}
-
-img {
-	width: 64px;
-	height: 64px;
-	margin-right: 24px;
-	display: flex;
 }
 
 section {
@@ -91,4 +46,34 @@ section {
 	display: flex;
 	margin-top: 1rem;
 	margin-bottom: 2rem;
+}
+
+.date {
+	color: grey;
+	font-size: 0.8rem;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 0.2rem;
+	display: block;
+}
+
+.role {
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 0.2rem;
+}
+
+img {
+	width: 64px;
+	height: 64px;
+	margin-right: 24px;
+	display: flex;
+}
+
+
+a:link, a:visited {
+	color: #024E0A;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #06205B;
 }

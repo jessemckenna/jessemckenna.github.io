@@ -19,7 +19,7 @@ h1, h2, h3 {
 }
 
 h1 {
-	margin-top: 20px;
+	margin-bottom: 2rem;
 	text-align: center;
 	font-size: 1.5rem;
 }
@@ -34,6 +34,11 @@ header p {
 	color: #646362;
 }
 
+p {
+	margin-top: 0.4rem;
+	margin-bottom: 0.4rem;
+}
+
 section {
 	background-color: #FAF9F7;
 	display: block;
@@ -42,12 +47,14 @@ section {
 hr {
 	border-color: #EAE8E0;
 	width: 75%;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .icons {
-	color: #646361;
-	font-size: 1.3rem;
-	letter-spacing: 0.5rem;
+	font-size: 1.8rem;
+	letter-spacing: 1.0rem;
+	margin-bottom: 2rem;
 }
 
 .box {

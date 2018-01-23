@@ -30,12 +30,6 @@ h2 {
 	margin-bottom: 24px;
 }
 
-h1+p {
-	color: #646361;
-	font-size: 1.3rem;
-	letter-spacing: 0.5rem;
-}
-
 header p {
 	color: #646362;
 }
@@ -48,6 +42,12 @@ section {
 hr {
 	border-color: #EAE8E0;
 	width: 75%;
+}
+
+.icons {
+	color: #646361;
+	font-size: 1.3rem;
+	letter-spacing: 0.5rem;
 }
 
 .box {

@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: #F2EDE7;
+	background-color: #F4F3EF;
 }
 
 header {
@@ -26,12 +26,28 @@ h1 {
 
 h2 {
 	text-align: center;
-	color: #E3182C;
+	color: #FFA500;
+	margin-bottom: 24px;
+}
+
+h1+p {
+	color: #646361;
+	font-size: 1.3rem;
+	letter-spacing: 0.5rem;
+}
+
+header p {
+	color: #646362;
 }
 
 section {
-	background-color: #FDFDFD;
+	background-color: #FAF9F7;
 	display: block;
+}
+
+hr {
+	border-color: #EAE8E0;
+	width: 75%;
 }
 
 .box {
@@ -40,6 +56,9 @@ section {
 	margin-bottom: 2rem;
 	padding: 1rem 2rem;
 	max-width: 1000px;
+	border: 1px;
+	border-style: solid;
+	border-color: #EAE8E0;
 }
 
 .entry {

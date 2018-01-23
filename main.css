@@ -51,12 +51,6 @@ hr {
 	margin-bottom: 1.5rem;
 }
 
-.icons {
-	font-size: 1.8rem;
-	letter-spacing: 1.0rem;
-	margin-bottom: 2rem;
-}
-
 .box {
 	margin-left: auto;
 	margin-right: auto;
@@ -96,10 +90,13 @@ img {
 
 
 a:link, a:visited {
-	color: #5C0959;
-	text-decoration: none;
+	font-size: 1.8rem;
+	letter-spacing: 1.0rem;
+	margin-bottom: 2rem;
+	color: #646361;
+	text-decoration:none;
 }
 
 a:hover {
-	color: #FF5D78;
+	color: #5CA8D9;
 }

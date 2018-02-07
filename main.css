@@ -35,7 +35,7 @@ h3 {
 	font-size: 1.1rem;
 }
 
-header p {
+header p, header p * {
 	color: #646362;
 }
 
@@ -72,13 +72,19 @@ hr {
 	font-size: 0.8rem;
 }
 
-#iconlinks {
+.icon-lg * {
 	font-size: 1.8rem;
 	margin-left: 0.5rem;
 	margin-right: 1rem;
 	margin-bottom: 0.5rem;
 	color: #646361;
 	text-decoration: none;
+}
+
+.icon-sm * {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	color: #646362;
 }
 
 .box {

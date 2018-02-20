@@ -19,6 +19,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-size: 4rem;
+	font-weight: 300;
 	text-align: center;
 	margin-top: 10rem;
 	color: #FFFFFF;
@@ -136,6 +137,7 @@ hr {
 #subtitle {
 	text-align: center;
 	font-size: 2rem;
+	font-weight: 300;
 	max-width: 60%;
 	margin-left: auto;
 	margin-right: auto;
@@ -150,10 +152,11 @@ hr {
 
 .icon-lg * {
 	font-size: 1.8rem;
+	margin-top: 2rem;
 	margin-left: 0.5rem;
 	margin-right: 1rem;
 	margin-bottom: 0.5rem;
-	color: #FFFFFF;
+	color: #DBDAD7;
 	text-decoration: none;
 }
 
@@ -221,10 +224,6 @@ a:hover * {
 	color: #FFFFFF;
 }
 
-ul {
-	list-style: none;
-}
-
-li {
-	margin-bottom: 0.2rem;
+td {
+	vertical-align: top;
 }

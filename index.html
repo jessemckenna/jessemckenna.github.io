@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Jesse McKenna</title>
+	<title>Jesse McKenna | About</title>
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway" rel="stylesheet">
-	<script defer src="/resources/fontawesome-all.js"></script>
 </head>
 <body>
 <div id="nav-bar">
 	<ul>
 		<li><a href="index.html">HOME</a></li>
 		<li><a href="resume.html">RESUME</a></li>
-		<li>SKILLS</li>
-		<li>BLOG</li>
+		<li><a href="skills.html">SKILLS</a></li>
+		<li><a href="blog.html">BLOG</a></li>
 	</ul>
 </div>
 <div id="intro-wrapper">
@@ -27,7 +26,13 @@
 			 <a class="icon-lg" href="http://www.twitter.com/_jessemckenna"><i class="fab fa-twitter"></i></a>
 		</p>
 	</div>
-	<div id="intro-bg"></div>
+	<div id="intro-bg" class="carousel">
+		<div id="bg-images" class="carousel-inner">
+			<div class="item"><img src="./images/becca-tapert-357537.jpg"></div>
+			<div class="item"><img src="./images/sapan-patel-69396.jpg"></div>
+			<div class="item"><img src="./images/alexandre-debieve-561298.jpg"></div>
+		</div>
+	</div>
 	<section id="about-me" class="box">
 		<h2>About Me</h2>
 		<p>I'm an aspiring software developer with a background in sustainability interested in creating software for good.</p>
@@ -45,5 +50,17 @@
 		</table>
 	</section>
 </div>
+
+<!--Bootstrap-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--FontAwesome-->
+<script defer src="/resources/fontawesome-all.js"></script>
+
+<!--Personal-->
+<script src="/resources/script.js"></script>
+
 </body>
 </html>

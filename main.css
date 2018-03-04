@@ -7,12 +7,7 @@ body {
 	background-color: #F4F3EF;
 }
 
-header {
-	text-align: center;
-	padding: 2rem;
-}
-
-h1, h2, h3, h4 {
+h1, h2, h3 {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
 }
@@ -27,41 +22,20 @@ h1 {
 
 h2 {
 	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1.7rem;
 	text-align: center;
 	font-size: 1.5rem;
+	font-weight: 300;
 	color: #3A3450;
 }
 
 h3 {
-	text-align: center;
-	color: #EF9500;
-	margin-top: 0.2rem;
-	margin-bottom: 1.5rem;
-	font-size: 1.2rem;
-}
-
-h4 {
 	font-size: 1.1rem;
-}
-
-header p, header p * {
-	color: #646362;
-}
-
-h2+p {
-	margin-top: 0.2rem;
-	margin-bottom: 1rem;
 }
 
 p {
 	margin-top: 0.4rem;
 	margin-bottom: 0.4rem;
-}
-
-section {
-	background-color: #FAF9F7;
-	display: block;
 }
 
 hr {
@@ -116,22 +90,32 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	height: 100%;
-	z-index: 10;
+	z-index: 100;
 	overflow: auto;
 }
 
 #intro-bg {
+	z-index: -100;
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	z-index: -10;
 	width: 100%;
 	height: 100%;
 	background-color: #222222;
-	background-image: url("images/becca-tapert-357537.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+}
+
+#intro-bg * {
+	z-index: -100;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#bg-images * {
+	border-style: solid;
+	border-color: red;
 }
 
 #subtitle {
@@ -179,6 +163,8 @@ hr {
 	border: 1px;
 	border-style: solid;
 	border-color: #EAE8E0;
+	background-color: #FAF9F7;
+	display: block;
 }
 
 .entry {
@@ -198,6 +184,31 @@ hr {
 .role {
 	font-family: 'Raleway', sans-serif;
 	margin-bottom: 0.2rem;
+}
+
+.skills {
+	display: flex;
+	justify-content: space-around;
+}
+
+.scroll-box {
+	height: 200px;
+	width: 75%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	overflow: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #DDDDDD;
+}
+
+.scroll-box p {
+	font-family: monospace;
+	color: #555555;
 }
 
 img {
@@ -226,4 +237,61 @@ a:hover * {
 
 td {
 	vertical-align: top;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+/*Bootstrap carousel CSS*/
+/*Source: http://www.whatibroke.com/2014/03/15/twitter-bootstrap-carousel-only-css/*/
+
+.carousel {
+  position: relative;
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  line-height: 1;
+}
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+.carousel-inner > .active {
+  left: 0;
+}
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.carousel-inner > .next {
+  left: 100%;
+}
+.carousel-inner > .prev {
+  left: -100%;
+}
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+.carousel-inner > .active.left {
+  left: -100%;
+}
+.carousel-inner > .active.right {
+  left: 100%;
 }

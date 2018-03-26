@@ -1,0 +1,11 @@
+---
+layout: blog
+---
+
+{% for post in site.posts %}
+<section class="box">
+	<h3>{{ post.title }}</h3>
+	<p class="date">{{ post.date | date: "%Y-%-m-%-d" }}</p>
+	{{ post.content }}	
+</section>
+{% endfor %}

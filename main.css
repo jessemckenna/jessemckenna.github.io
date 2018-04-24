@@ -148,6 +148,14 @@ hr {
 	color: #646362;
 }
 
+.star-on * {
+	color: #226BB0;
+}
+
+.star-off * {
+	color: #D2D2D2;
+}
+
 .box {
 	margin-left: auto;
 	margin-right: auto;
@@ -189,6 +197,10 @@ hr {
 	justify-content: space-around;
 }
 
+.skills-left {
+	text-align: right;
+}
+/*
 .scroll-box {
 	height: 200px;
 	width: 75%;
@@ -208,7 +220,7 @@ hr {
 	font-family: monospace;
 	color: #555555;
 }
-
+*/
 .logo {
 	width: 64px;
 	height: 64px;

@@ -1,8 +1,3 @@
-// Initialize picture carousel
-$(document).ready(function() {
-	$('.carousel').carousel();
-});
-
 // Add gradual glow effect to nav links upon mouseover
 var navLinks = Array.from(document.getElementsByClassName("nav-link"));
 for (var i = 0; i < navLinks.length; i++) {

@@ -193,13 +193,22 @@ hr {
 }
 
 .skills {
-	display: flex;
-	justify-content: space-around;
+	text-align: center;
 }
 
 .skills-left {
 	text-align: right;
+	display: inline-block;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
+
+.skills-right {
+	display: inline-block;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
 /*
 .scroll-box {
 	height: 200px;

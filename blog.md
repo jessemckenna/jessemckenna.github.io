@@ -1,4 +1,4 @@
 ---
-title: Jesse McKenna | Blog
+title: Blog
 layout: post
 ---

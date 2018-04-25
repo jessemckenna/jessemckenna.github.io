@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: default
 title: Hello, world!
 date: 2018-3-26
 ---

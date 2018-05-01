@@ -16,7 +16,7 @@ h1 {
 	font-size: 4rem;
 	font-weight: 300;
 	text-align: center;
-	margin-top: 10rem;
+	margin-top: 5%;
 	color: #FFFFFF;
 }
 
@@ -142,10 +142,26 @@ hr {
 	text-decoration: none;
 }
 
+a:hover[class="icon-lg"] * {
+	color: #FFFFFF;
+}
+
 .icon-sm * {
 	margin-left: 0.5rem;
 	margin-right: 0.5rem;
 	color: #646362;
+}
+
+.icon-med * {
+	font-size: 1.3rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	margin-top: 1.5rem;
+	color: grey;
+}
+
+a:hover[class="icon-med"] * {
+	color: #3A3450;
 }
 
 .star-on * {
@@ -209,32 +225,32 @@ hr {
 	margin-right: 1rem;
 }
 
-/*
-.scroll-box {
-	height: 200px;
-	width: 75%;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	overflow: auto;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #DDDDDD;
-}
-
-.scroll-box p {
-	font-family: monospace;
-	color: #555555;
-}
-*/
 .logo {
 	width: 64px;
 	height: 64px;
 	margin-right: 24px;
 	display: flex;
+}
+
+.flex {
+	display: flex;
+}
+
+.project-img {
+	width: 50%;
+	height: auto;
+	max-height: 15rem;
+	margin-right: 24px;
+}
+
+.project-img * {
+	width: 100%;
+}
+
+.project-desc {
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 a {
@@ -244,10 +260,6 @@ a {
 
 a:hover {
 	color: #5CA8D9;
-}
-
-a:hover * {
-	color: #FFFFFF;
 }
 
 #nav-bar a:hover {

@@ -132,6 +132,11 @@ hr {
 	line-height: 2rem;
 }
 
+#resume-dl {
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
 .icon-lg * {
 	font-size: 1.8rem;
 	margin-top: 2rem;

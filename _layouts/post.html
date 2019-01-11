@@ -2,10 +2,8 @@
 layout: default
 ---
 
-{% for post in site.posts %}
 <section class="box">
-	<h3>{{ post.title }}</h3>
-	<p class="date">{{ post.date | date: "%Y-%-m-%-d" }}</p>
-	{{ post.content }}	
+	<h3>{{page.title}}</h3>
+	<p class="date">{{page.date | date: "%Y-%-m-%-d"}}</p>
+	{{page.content}}
 </section>
-{% endfor %}

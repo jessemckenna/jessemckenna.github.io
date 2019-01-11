@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% for post in site.posts %}
+<a href="{{post.url}}">
+<section class="box">
+	<h3>{{post.title}}</h3>
+	<p class="date">{{post.date | date: "%Y-%-m-%-d"}}</p>
+	{{post.excerpt}}
+	<p>[...]</p>
+</section>
+</a>
+{% endfor %}

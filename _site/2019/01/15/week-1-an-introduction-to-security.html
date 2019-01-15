@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jesse McKenna | Week 1, an introduction to security</title>
+	<link rel="stylesheet" href="/assets/css/main.css">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway" rel="stylesheet">
+	<script defer src="/assets/js/fontawesome-all.js"></script>
+</head>
+<body>
+<div id="nav-bar">
+	<ul id="nav-list">
+		<li><a class="nav-link" href="/index.html">HOME</a></li>
+		<li><a class="nav-link" href="/resume.html">RESUME</a></li>
+		<li><a class="nav-link" href="/skills.html">SKILLS</a></li>
+		<li><a class="nav-link" href="/projects.html">PROJECTS</a></li>
+		<li><a class="nav-link" href="/blog.html">BLOG</a></li>
+	</ul>
+</div>
+<div id="nav-spacer"></div>
+
+<section class="box">
+	<h3>Week 1, an introduction to security</h3>
+	<p class="date">2019-1-15</p>
+	<p>This is the first of nine weekly reflections I will be writing for CS373 <em>Defense Against the Dark Arts</em>, which focuses on security and malware analysis.</p>
+
+<p>This week was a basic introduction to malware and the field of security: terminology, tools, and usual actors involved.
+<!--more--></p>
+
+<h4 id="security-basics">Security basics</h4>
+
+<p>The term <em>malware</em> refers to any malicious software, which can include software that steals information, destroys data, enables remote control, replicates itself, etc. against the interest of the user. The most common infection vectors are the user themselves, USB, downloaded executables, and document files. Malware developers are usually employed by governments, organized crime groups, or companies looking to sabotage competitors.</p>
+
+<p>To respond to new pieces of malware, security companies analyze samples received from customers, known infection sources, etc. Once a sample’s behavior is understood, it can be added to an anti-virus or anti-malware program’s dictionary and counteracted.</p>
+
+<h4 id="malware-analysis-assignment">Malware analysis assignment</h4>
+
+<p>This week’s assignment was to execute a piece of malware inside a VM and run a simple analysis of its behavior.</p>
+
+<p>The tools used were:</p>
+<ul>
+  <li>FlyPaper: to prevent processes from exiting</li>
+  <li>FakeNet: to simulate internet connectivity while remaining offline, and track attempts to use the network</li>
+  <li>Process Monitor: to keep a log of any activities done by processes (file read/write, registry access, thread control, etc.)</li>
+  <li>Process Explorer: to scrape useful data from running processes, including a useful list of all strings found in a process</li>
+  <li>AntiSpy: to look for suspicious behavior and changes to the registry</li>
+</ul>
+
+<p>In my (limited) experience dealing with computer infections, my approach has always been heavy-handed, relying mainly on having a reliable file-backup system and then reformatting right away. Since I’ve never stopped to investigate any piece of malware before nuking it, this was a new process to me.</p>
+
+<p>Overall, I was impressed by the malware’s efficiency in doing its work. It executed without showing anything on screen, and took only a few seconds to install itself, modify the hosts file, download its files, set up scheduled tasks, etc. I was also surprised at how much free rein the OS gives to executables. To be fair, the OS in this case was Windows XP, so more protection is likely in place in more modern OSes, but modern malware is probably also more advanced.</p>
+
+<h4 id="reflection">Reflection</h4>
+
+<p>I can see the appeal of security as a field - the arms race between the two sides seems like a lot of fun, although I personally prefer writing software to running it. I would love to take a look at the source code for the piece of malware I was analyzing. It seems like the developers writing these things must be experts on the OS they tamper with.</p>
+
+<p>This week also reinforced how important it is to avoid infection in the first place. Once a malicious executable is running on the computer, it seems like it’s likely too late.</p>
+
+</section>
+
+</body>
+<!--Personal-->
+<script type="text/javascript" src="/assets/js/scripts.js"></script>
+</html>

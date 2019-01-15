@@ -33,6 +33,10 @@ h3 {
 	font-size: 1.1rem;
 }
 
+h4 {
+	margin-bottom: 0rem;
+}
+
 p {
 	margin-top: 0.4rem;
 	margin-bottom: 0.4rem;
@@ -75,6 +79,11 @@ hr {
 
 #nav-bar a:hover {
 	color: #FFFFFF;
+}
+
+#nav-list {
+	padding: 0;
+	list-style: none;
 }
 
 #intro-wrapper {
@@ -279,11 +288,10 @@ td {
 	vertical-align: top;
 }
 
-ul {
-	padding: 0;
-	list-style: none;
-}
-
 img {
 	object-fit: cover;
+}
+
+ul {
+	margin-top: 0rem;
 }

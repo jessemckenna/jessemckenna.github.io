@@ -59,6 +59,9 @@ hr {
 	right: 0px;
 	height: 4rem;
 	background-color: #111111;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 #nav-bar * {
@@ -69,6 +72,8 @@ hr {
 	color: #DBDAD7;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.3rem;
+	width: 100%;
+	margin-bottom: 0px;
 }
 
 #nav-spacer {
@@ -79,11 +84,6 @@ hr {
 
 #nav-bar a:hover {
 	color: #FFFFFF;
-}
-
-#nav-list {
-	padding: 0;
-	list-style: none;
 }
 
 #intro-wrapper {

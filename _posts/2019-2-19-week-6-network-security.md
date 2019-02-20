@@ -64,7 +64,7 @@ The second part of the principle is almost as important: software on other hosts
 | 9  | DMZ mail server              | Internet               | *SMTP*                               | Permit   | No    | *Enable the DMZ mail server*                                                      |
 | 10 | *Partner 1 on Internet*      |                        | *HTTPS*                              | Permit   | No    |                                                                                   |
 | 11 | *Trusted client on Internet* |                        | *HTTPS*                              | Permit   | No    |                                                                                   |
-| 12 | Internet                     | Lab server             | HTTP | HTTPS                         | Deny     | Yes   | *Protect lab servers from Internet traffic*                                       |
+| 12 | Internet                     | Lab server             | HTTP \| HTTPS                        | Deny     | Yes   | *Protect lab servers from Internet traffic*                                       |
 | 13 | Intranet                     | Lab server             | *SSH*                                | Permit   | No    | *Enable corporate users to access the lab machines*                               |
 | 14 | Intranet                     | *Extranet supplier 7*  | *HTTPS*                              | Permit   | No    | *Access an extranet partner*                                                      |
 | 15 | Intranet                     | Cloud DC               | *SSH*                                | Permit   | No    | *Backup servers*                                                                  |
@@ -75,7 +75,7 @@ The second part of the principle is almost as important: software on other hosts
 | 20 | Internet                     | *Corporate Web Server* | (HTTP & TCP/80)\|(HTTPS & TCP/443)   | Permit   | No    | *Internet users can browse corporate web server*                                  |
 | 21 | Intranet                     | *Corporate Web Server* | SSH                                  | Permit   | No    | *Local admins can maintain the corporate web server*                              |
 | 22 | Intranet                     | *Corporate Web Server* | (HTTP & TCP/80)\|(HTTPS & TCP/443)   | Permit   | No    | *Intranet users can access corporate web server*                                  |
-| 23 | Intranet                     | Corporate Mail Server  | POP3 | IMAP                          | Permit   | No    | *Corporate users can read their mail*                                             |
+| 23 | Intranet                     | Corporate Mail Server  | POP3 \| IMAP                         | Permit   | No    | *Corporate users can read their mail*                                             |
 | 24 | Intranet                     | Corporate Mail Server  | SMTP                                 | Permit   | No    | *Corporate users can send mail*                                                   |
 | 25 |                              | *Corporate DNS server* |                                      |          |       | *DNS server rules*                                                                |
 | 26 |                              | *Corporate DNS server* |                                      |          |       | *DNS server rules*                                                                |

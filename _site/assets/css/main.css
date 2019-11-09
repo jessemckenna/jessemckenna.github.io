@@ -1,197 +1,7 @@
 * {
 	font-family: 'Open Sans', sans-serif;
-	color: #2F2E2F;
-}
-
-body {
-	background-color: #F4F3EF;
-}
-
-h1, h2, h3 {
-	font-family: 'Raleway', sans-serif;
-	margin: 0;
-}
-
-h1 {
-	font-size: 4rem;
-	font-weight: 300;
-	text-align: center;
-	margin-top: 5%;
+	background-color: #000000;
 	color: #FFFFFF;
-}
-
-h2 {
-	margin-top: 1.5rem;
-	margin-bottom: 1.7rem;
-	text-align: center;
-	font-size: 1.5rem;
-	font-weight: 300;
-	color: #3A3450;
-}
-
-h3 {
-	font-size: 1.1rem;
-}
-
-h4 {
-	margin-bottom: 0rem;
-}
-
-p {
-	margin-top: 0.4rem;
-	margin-bottom: 0.4rem;
-}
-
-hr {
-	border: none;
-	height: 1px;
-	width: 50%;
-	color: #FFFFFF;
-	background-color: #FFFFFF;;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-}
-
-#nav-bar {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	height: 4rem;
-	background-color: #111111;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-#nav-bar * {
-	display: flex;
-	justify-content: space-around;
-	list-style: none;
-	overflow: auto;
-	color: #DBDAD7;
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.3rem;
-	width: 100%;
-	margin-bottom: 0px;
-}
-
-#nav-spacer {
-	position: relative;
-	height: 3.5rem;
-	z-index: -1;
-}
-
-#nav-bar a:hover {
-	color: #FFFFFF;
-}
-
-#intro-wrapper {
-	position: absolute;
-	top: 4rem;
-	left: 0px;
-	bottom: 0px;
-	right: 0px;
-	height: 50%;
-}
-
-#intro {
-	top: 25%;
-	text-align: center;
-	margin-top: auto;
-	margin-bottom: auto;
-	margin-left: auto;
-	margin-right: auto;
-	height: 100%;
-	z-index: 100;
-	overflow: auto;
-}
-
-#intro-bg {
-	z-index: -100;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	background-color: #222222;
-}
-
-#intro-bg * {
-	z-index: -100;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-#subtitle {
-	text-align: center;
-	font-size: 2rem;
-	font-weight: 300;
-	max-width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	color: #FFFFFF;
-}
-
-#about-me {
-	padding-left: 25%;
-	padding-right: 25%;
-	line-height: 2rem;
-}
-
-#feed-container {
-	max-width: 50rem;
-}
-
-#resume-dl {
-	margin-bottom: 2rem;
-	text-align: center;
-}
-
-.icon-lg * {
-	font-size: 1.8rem;
-	margin-top: 2rem;
-	margin-left: 0.5rem;
-	margin-right: 1rem;
-	margin-bottom: 0.5rem;
-	color: #DBDAD7;
-	text-decoration: none;
-}
-
-a:hover[class="icon-lg"] * {
-	color: #FFFFFF;
-}
-
-.icon-sm * {
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-	color: #646362;
-}
-
-.icon-med * {
-	font-size: 1.3rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
-	margin-top: 1.5rem;
-	color: grey;
-}
-
-a:hover[class="icon-med"] * {
-	color: #3A3450;
-}
-
-.star-on * {
-	color: #226BB0;
-}
-
-.star-off * {
-	color: #D2D2D2;
 }
 
 .box {
@@ -204,47 +14,19 @@ a:hover[class="icon-med"] * {
 	padding-right: 2rem;
 	padding-bottom: 1.5rem;
 	max-width: 1000px;
-	border: 1px;
-	border-style: solid;
-	border-color: #EAE8E0;
-	background-color: #FAF9F7;
 	display: block;
 }
 
 .entry {
 	display: flex;
-	margin-top: 1rem;
-	margin-bottom: 2rem;
 }
 
 .date {
-	color: #A9A9A9;
-	font-size: 0.8rem;
-	font-family: 'Raleway', sans-serif;
-	margin-bottom: 0.2rem;
 	display: block;
 }
 
 .role {
 	font-family: 'Raleway', sans-serif;
-	margin-bottom: 0.2rem;
-}
-
-.skills {
-	text-align: center;
-}
-
-.skills-left {
-	text-align: right;
-	display: inline-block;
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-.skills-right {
-	display: inline-block;
-	margin-left: 1rem;
-	margin-right: 1rem;
 }
 
 .logo {
@@ -254,44 +36,3 @@ a:hover[class="icon-med"] * {
 	display: flex;
 }
 
-.flex {
-	display: flex;
-}
-
-.project-img {
-	width: 50%;
-	height: auto;
-	max-height: 15rem;
-	margin-right: 24px;
-}
-
-.project-img * {
-	width: 100%;
-}
-
-.project-desc {
-	width: 100%;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-
-a {
-	color: #226BB0;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #5CA8D9;
-}
-
-td {
-	vertical-align: top;
-}
-
-img {
-	object-fit: cover;
-}
-
-ul {
-	margin-top: 0rem;
-}

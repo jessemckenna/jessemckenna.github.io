@@ -1,14 +1,49 @@
+/* Colors */
+:root {
+    --white: #f7f3e3;
+    --cream: #efd6ac;
+    --light-blue: #75b9be;
+    --maroon: #580c1f;
+    --navy: #071013;
+}
+
+
 * {
-	font-family: 'Open Sans', sans-serif;
-	background-color: #000000;
-	color: #FFFFFF;
+	font-family: monospace;
+	color: var(--white);
+}
+
+body {
+	margin: 2%;
+}
+
+body, body * {
+	background-color: var(--navy);
+}
+
+a, a * {
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-bottom: 1%;
+}
+
+#icon-bar {
+	max-width: 10rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between; /* justification along main axis */
+	align-items: stretch; /* alignment perpendicular to main axis */
 }
 
 .box {
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 2rem;
-	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.5rem;
 	padding-top: 1rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
@@ -17,22 +52,23 @@
 	display: block;
 }
 
-.entry {
+.box-entry {
 	display: flex;
+	flex-direction: row;
+	justify-content: flex-start; /* justification along main axis */
+	align-items: stretch; /* alignment perpendicular to main axis */
+	margin-bottom: 0.5rem;
 }
 
-.date {
-	display: block;
-}
-
-.role {
-	font-family: 'Raleway', sans-serif;
-}
-
-.logo {
+.box-entry-logo {
 	width: 64px;
 	height: 64px;
 	margin-right: 24px;
-	display: flex;
+	margin-top: 1rem;
+}
+
+.box-entry-text * {
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
 }
 

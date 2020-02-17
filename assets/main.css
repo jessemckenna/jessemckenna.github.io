@@ -1,9 +1,9 @@
 /* Colors */
 :root {
     --white: #f7f3e3;
-    --cream: #efd6ac;
-    --light-blue: #75b9be;
-    --maroon: #580c1f;
+    --blue: #336699;
+    --lavender: #c1bddb;
+    --pink: #FF72B4;
     --navy: #071013;
 }
 
@@ -28,6 +28,11 @@ a, a * {
 h1 {
 	font-size: 2rem;
 	margin-bottom: 1%;
+	color: var(--pink);
+}
+
+h2, h3 {
+	color: var(--lavender);
 }
 
 #icon-bar {
@@ -37,6 +42,10 @@ h1 {
 	flex-direction: row;
 	justify-content: space-between; /* justification along main axis */
 	align-items: stretch; /* alignment perpendicular to main axis */
+}
+
+.icon, .icon * {
+	color: var(--blue);
 }
 
 .box {

@@ -2,15 +2,47 @@
 
 <head>
   <title>1</title>
+  <script>
+    DELAY_PARAM = 'delay_ms'
+
+    function Navigate() {
+      // Get destination URL path. Alternate between pages 1 and 2.
+      let destination_url = "cross-site-";
+      destination_url += window.location.pathname.endsWith("1.html") ? "2.html" : "1.html";
+
+      // Give destination URL the same delay as this page was given.
+      const parameters = new URLSearchParams(window.location.search);
+      const delay = parameters.get(DELAY_PARAM);
+      if (delay)
+        destination_url += "/?" + DELAY_PARAM + "=" + delay;
+
+      // Navigate to |destination_url|.
+      console.log("destination_url: " + destination_url);
+      window.location.href = destination_url;
+    }
+
+    function LoadSubframe() {
+      const body = document.getElementById("body");
+      const subframe = document.createElement("iframe");
+      subframe.setAttribute("src", "https://blog.chromium.org/2008/09/welcome-to-chromium_02.html");
+      subframe.setAttribute("style", "border:2px solid grey");
+      body.replaceChild(subframe, document.getElementById("placeholder"));
+    }
+
+    function LoadSubframeWithDelay() {
+      const parameters = new URLSearchParams(window.location.search);
+      const delay = parseInt(parameters.get(DELAY_PARAM));
+      if (delay)
+        setTimeout(LoadSubframe, delay);
+      else
+        LoadSubframe();
+    }
+  </script>
 </head>
 
-<body>
-  <h1 style="font-family:monospace">
-    1
-    <a href="./cross-site-2.html">2</a>
-  </h1>
-  <iframe src="https://blog.chromium.org" width="100%" height="90%"
-    style="border:2px solid grey"></iframe>
+<body id="body" onload="LoadSubframeWithDelay()">
+  <p><button type="button" onclick="Navigate()">navigate</button></p>
+  <p id="placeholder" style="font-family:monospace">waiting to load subframe...</p>
 </body>
 
 </html>

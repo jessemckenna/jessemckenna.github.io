@@ -4,43 +4,72 @@
   <title>1</title>
   <script>
     DELAY_PARAM = 'delay_ms'
+    NUM_SUBFRAMES_PARAM = 'n'
+    URLS = ["https://blog.chromium.org/2008/09/welcome-to-chromium_02.html",
+            "https://chromiumdash.appspot.com/",
+            "https://google.github.io/styleguide/cppguide.html",
+            "https://godbolt.org/",
+            "https://en.wikipedia.org/wiki/Chromium_(web_browser)"
+    ]
 
     function Navigate() {
       // Get destination URL path. Alternate between pages 1 and 2.
-      let destination_url = "cross-site-";
-      destination_url += window.location.pathname.endsWith("1.html") ? "2.html" : "1.html";
+      var destination_url = new URL(window.location.href);
+      if (destination_url.pathname.includes("1.html")) {
+        destination_url.pathname = destination_url.pathname.replace(
+            "1.html", "2.html");
+      }
+      else {
+        destination_url.pathname = destination_url.pathname.replace(
+            "2.html", "1.html");
+      }
 
-      // Give destination URL the same delay as this page was given.
-      const parameters = new URLSearchParams(window.location.search);
-      const delay = parameters.get(DELAY_PARAM);
-      if (delay)
-        destination_url += "?" + DELAY_PARAM + "=" + delay;
+      // Pass received search parameters to destination URL.
+      /*const parameters = new URLSearchParams(window.location.search);
+      if (parameters)
+        destination_url.search = parameters;*/
 
       // Navigate to |destination_url|.
       console.log("destination_url: " + destination_url);
       window.location.href = destination_url;
     }
 
-    function LoadSubframe() {
+    function LoadSubframe(url) {
       const body = document.getElementById("body");
       const subframe = document.createElement("iframe");
-      subframe.setAttribute("src", "https://blog.chromium.org/2008/09/welcome-to-chromium_02.html");
+      subframe.setAttribute("src", url);
       subframe.setAttribute("style", "border:2px solid grey");
-      body.replaceChild(subframe, document.getElementById("placeholder"));
+      if (document.getElementById("placeholder"))
+        body.replaceChild(subframe, document.getElementById("placeholder"));
+      else
+        body.appendChild(subframe);
     }
 
-    function LoadSubframeWithDelay() {
+    function LoadSubframes(num_subframes) {
+      if (!num_subframes)
+        num_subframes = 1;
+      if (num_subframes > URLS.length)
+        num_subframes = URLS.length;
+      var i;
+      for (i = 0; i < num_subframes; i++)
+        LoadSubframe(URLS[i]);
+    }
+
+    function LoadSubframesWithDelay() {
       const parameters = new URLSearchParams(window.location.search);
       const delay = parseInt(parameters.get(DELAY_PARAM));
-      if (delay)
-        setTimeout(LoadSubframe, delay);
-      else
-        LoadSubframe();
+      const num_subframes = parseInt(parameters.get(NUM_SUBFRAMES_PARAM));
+      if (delay) {
+        setTimeout(LoadSubframes, delay, num_subframes);
+      }
+      else {
+        LoadSubframes(num_subframes);
+      }
     }
   </script>
 </head>
 
-<body id="body" onload="LoadSubframeWithDelay()">
+<body id="body" onload="LoadSubframesWithDelay()">
   <p><button type="button" onclick="Navigate()">navigate</button></p>
   <p id="placeholder" style="font-family:monospace">waiting to load subframe...</p>
 </body>
